@@ -1,0 +1,223 @@
+@keyframes imgfade {
+  from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-50%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+* {
+  padding: 0;
+  margin:0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.dome {
+    width: 100%;
+}
+a{
+    font-family:'IBM Plex Serif';
+    position:relative;
+    margin:0.4em;  
+    padding:1em;
+    color:white; 
+    z-index:0;
+  }
+  a:hover {
+      color: white;
+      }
+  a:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: rgba(20, 20, 20, 0.3);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .5s ease-out;
+  }
+  a:hover:before {
+      transform: scaleX(1);
+      color:white;
+}
+
+ul {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.destination {
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    color: white;
+    font-weight: bolder
+}
+.country {
+    position: absolute;
+    top: 240px;
+    right: 30px;
+    color: white;
+    font-weight: bolder
+}
+
+h2 {
+    color: #003464;
+    font-family:'IBM Plex Serif';
+}
+.pin {
+    width: 40px;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+
+  }
+.love {
+    font-size: 70px;
+    transition-duration: 1s;
+    color: #003464;
+    text-shadow: -2px 0 #003464, 0 2px #003464, 2px 0 #003464, 0 -2px #003464;
+    font-family:'IBM Plex Serif'; 
+  }
+
+.love:hover {
+    color: white;
+}
+p {
+    font-family:'IBM Plex Serif';
+    font-weight: 300;
+  }
+.market {
+      height: 400px;
+  }
+.museum {
+    height: 400px;
+}
+.ponte {
+    height: 450px;
+}
+.gelato {
+    height: 400px;
+}
+
+.image1 {
+    position: relative;
+  }
+  
+  .market {
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    left: 35px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .image1:hover .market {
+    opacity: 1;
+
+  }
+  
+  .image1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .info {
+    color: white;
+    background-color: rgba(20, 20, 20, 0.5);
+    padding: 20px
+  }
+  .btn {
+      background-color: #003464;
+      border-radius: 30px;
+  }
+  .btn:hover {
+      background-color: white;
+      color: #003464
+  }
+  .rec {
+      position: absolute;
+      font-size: 8vw;
+background-repeat: no-repeat;
+left: 58px;
+top: 62px;
+font-family :'IBM Plex Serif';
+font-weight: bold;
+font-size: 75px;
+line-height: 33px;
+text-align: center;
+color: black;
+  }
+.os {
+    position: absolute;
+height: 82px;
+left: 100px;
+color: black;
+top: 130px;
+font-family :'IBM Plex Serif';
+font-weight: bold;
+font-size: 50px;
+line-height: 33px;
+text-align: center;
+}
+
+.btn2 {
+    background-color: #003464;
+    border-radius: 30px;
+}
+.btn2:hover {
+    background-color: white;
+    color: #003464
+}
+.carousel {
+    width: 450px, 100%; 
+}
+h3 {
+    color: #003464;
+    font-family:'IBM Plex Serif';
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #003464;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 1.5s
+}
+h3:hover::after{
+    transform: scaleX(1)
+}
+footer {
+  background-color: black;
+}
+.fill {
+  background-color: #ADD7FD
+}
